@@ -72,6 +72,23 @@ add "prettier" to the "extends" array in your
 ```
 > Preferences > Languages & Frameworks > JavaScript > Prettier > "On save"
 
+## Jest
+```shell
+npm install --save-dev jest
+```
+[Integrating with Linters](https://github.com/jest-community/eslint-plugin-jest#readme)
+```shell
+npm install --save-dev eslint-plugin-jest
+```
+.eslintrc.json
+```json
+{
+  "plugins": ["jest"],
+  "extends": ["plugin:jest/recommended"]
+}
+```
+> Run > Edit Configurations... > Add New Configuration > Jest > Add `--watch` on Jest options
+
 ## Configure Webstorm
 1. Preferences > Languages & Frameworks > JavaScript > Code Quality Tools > ESLint > "Automatic ESLint configuration"
 2. Preferences > Languages & Frameworks > JavaScript > Prettier > "On save"
